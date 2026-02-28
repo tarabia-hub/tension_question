@@ -27,20 +27,12 @@
         <input id="t" type="number" value="9.5" step="0.1" />
       </label>
 
-      <label class="field"><span class="field-label">Outstanding leg length, b (mm)</span>
-        <input id="b" type="number" value="127" step="1" />
-      </label>
-
       <label class="field"><span class="field-label">Gauge, g (mm)</span>
         <input id="g" type="number" value="75" step="1" />
       </label>
 
       <label class="field"><span class="field-label">Bolt hole diameter, d<sub>h</sub> (mm)</span>
         <input id="dh" type="number" value="24" step="0.5" />
-      </label>
-
-      <label class="field"><span class="field-label">Number of bolts, n</span>
-        <input id="n" type="number" value="4" step="1" />
       </label>
 
       <label class="field"><span class="field-label">Bolt spacing, s (mm)</span>
@@ -51,29 +43,42 @@
         <input id="e" type="number" value="40" step="1" />
       </label>
 
-      <label class="field"><span class="field-label">Yield stress, F<sub>y</sub> (MPa)</span>
-        <input id="Fy" type="number" value="350" step="1" />
-      </label>
+      <details class="advanced-inputs">
+        <summary>Show advanced inputs</summary>
+        <div class="advanced-grid">
+          <label class="field"><span class="field-label">Outstanding leg length, b (mm)</span>
+            <input id="b" type="number" value="127" step="1" />
+          </label>
 
-      <label class="field"><span class="field-label">Ultimate stress, F<sub>u</sub> (MPa)</span>
-        <input id="Fu" type="number" value="450" step="1" />
-      </label>
+          <label class="field"><span class="field-label">Number of bolts, n</span>
+            <input id="n" type="number" value="4" step="1" />
+          </label>
 
-      <label class="field"><span class="field-label">Shear lag factor, U</span>
-        <input id="U" type="number" value="0.8" step="0.01" />
-      </label>
+          <label class="field"><span class="field-label">Yield stress, F<sub>y</sub> (MPa)</span>
+            <input id="Fy" type="number" value="350" step="1" />
+          </label>
 
-      <label class="field"><span class="field-label">Resistance factor (yielding), φ<sub>y</sub></span>
-        <input id="phiY" type="number" value="0.9" step="0.01" />
-      </label>
+          <label class="field"><span class="field-label">Ultimate stress, F<sub>u</sub> (MPa)</span>
+            <input id="Fu" type="number" value="450" step="1" />
+          </label>
 
-      <label class="field"><span class="field-label">Resistance factor (fracture), φ<sub>u</sub></span>
-        <input id="phiU" type="number" value="0.75" step="0.01" />
-      </label>
+          <label class="field"><span class="field-label">Shear lag factor, U</span>
+            <input id="U" type="number" value="0.8" step="0.01" />
+          </label>
 
-      <label class="field"><span class="field-label">Block-shear tension coefficient, u<sub>t</sub></span>
-        <input id="ut" type="number" value="0.6" step="0.01" />
-      </label>
+          <label class="field"><span class="field-label">Resistance factor (yielding), φ<sub>y</sub></span>
+            <input id="phiY" type="number" value="0.9" step="0.01" />
+          </label>
+
+          <label class="field"><span class="field-label">Resistance factor (fracture), φ<sub>u</sub></span>
+            <input id="phiU" type="number" value="0.75" step="0.01" />
+          </label>
+
+          <label class="field"><span class="field-label">Block-shear tension coefficient, u<sub>t</sub></span>
+            <input id="ut" type="number" value="0.6" step="0.01" />
+          </label>
+        </div>
+      </details>
 
       <button id="solveBtn">Solve</button>
       <p id="error" class="error"></p>
